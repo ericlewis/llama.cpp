@@ -246,7 +246,7 @@ bool llama_model_load(const std::string & fname, llama_model & model, gpt_vocab 
         const int n_embd  = hparams.n_embd;
         const int n_layer = hparams.n_layer;
         const int n_ctx   = hparams.n_ctx;
-        const int n_vocab = hparams.n_vocab;
+        const int n_vocab = hparams.n_vocab + 1;
 
         model.layers.resize(n_layer);
 
